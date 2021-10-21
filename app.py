@@ -4,6 +4,7 @@ from flask import Flask
 from ec2_metadata import ec2_metadata
 from botocore.exceptions import ClientError
 
+app = Flask(__name__)
 
 @app.route("/tags")
 def retrieve_tags():
